@@ -9,10 +9,11 @@ class Gioco extends Products
     public $colore;
 
 
-    function __construct($_materiale, $_colore, $_price, $_name, $_tipoAnimale)
+    function __construct($_materiale, $_colore, $_price, $_name, $_tipoAnimale, $_text)
     {
         parent::__construct($_price, $_name, $_tipoAnimale);
         $this->materiale = $_materiale;
         $this->colore = $_colore;
+        $this->text = $_text;
     }
 }

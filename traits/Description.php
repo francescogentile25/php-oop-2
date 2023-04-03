@@ -3,7 +3,6 @@ trait Description
 {
     public $text;
 
-
     /**
      * Get the value of text
      */
