@@ -21,3 +21,8 @@ trait Description
         return $this;
     }
 }
+
+
+// creo il trai con i getter e i setter (SENZA CONSTRUCTOR)
+// lo importo nella classe che serve 
+// lo aggiungo al costruttore 

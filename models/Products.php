@@ -8,7 +8,15 @@ class Products extends Category
     {
         parent::__construct($_tipoAnimale);
         $this->price = $_price;
-        $this->name = $_name;
+        try {
+            if (strlen($_name) < 5) {
+                throw new Exception("No mi sta rovinando tutto il piano, pensavo di farlo così ma in realtà...");
+            } else {
+                $this->name = $_name;
+            }
+        } catch (Exception $e) {
+            echo "Errore: " . $e->getMessage();
+        }
     }
 }
 //varaibili protected 

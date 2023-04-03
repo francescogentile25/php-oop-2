@@ -1,14 +1,14 @@
 <?php
 require_once "./models/Food.php";
 require_once "./models/Toys.php";
-$cibo1 = new Food(100, 'sale, pepe', 5, 'salmone', 'gatto');
+$cibo1 = new Food(100, 'sale, pepe', 5, 'salmone', 'gatto', 'salmone norvegese appena pescato e molto costoso');
 $prodotto1 = new Products(10, "generico", 'generico');
-$gioco1 = new Gioco('plastica', 'rosso', 12, 'palla', 'cane', 'prova setter');
+$gioco1 = new Gioco('plastica', 'rosso', 12, 'palla', 'cane', 'pr');
 var_dump($cibo1, $prodotto1, $gioco1);
 
 $cibi = [
     $cibo1,
-    new Food(12, 'pollo, pane', 5, 'crocchette', 'cane')
+    new Food(12, 'pollo, pane', 5, 'ee', 'cane', 'croccehtte scadenti')
 ];
 
 
@@ -42,6 +42,7 @@ $giochi = [
                                 <li>Prodotto <?php echo $cibo->name ?></li>
                                 <li><?php echo $cibo->gr .= "gr " ?></li>
                                 <li>ingredienti <?php echo $cibo->ingredienti ?></li>
+                                <li> <?php echo $cibo->text ?></li>
 
                             </ul>
                         </div>
@@ -58,6 +59,7 @@ $giochi = [
                                 <li>Prodotto <?php echo $gioco->name ?></li>
                                 <li><?php echo $gioco->materiale .= " materiale " ?></li>
                                 <li> <?php echo $gioco->colore ?></li>
+                                <li> <?php echo $gioco->text ?></li>
 
                             </ul>
                         </div>
