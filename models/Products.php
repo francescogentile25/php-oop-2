@@ -11,3 +11,5 @@ class Products extends Category
         $this->name = $_name;
     }
 }
+//varaibili protected 
+//metodi public

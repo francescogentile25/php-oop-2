@@ -1,9 +1,13 @@
 <?php
 require_once __DIR__ . '/Products.php';
+require_once __DIR__ . '/../traits/Description.php';
+
 class Gioco extends Products
 {
+    use Description;
     public $materiale;
     public $colore;
+
 
     function __construct($_materiale, $_colore, $_price, $_name, $_tipoAnimale)
     {
