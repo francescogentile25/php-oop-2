@@ -2,7 +2,7 @@
 require_once "./models/Food.php";
 require_once "./models/Toys.php";
 $cibo1 = new Food(100, 'sale, pepe', 5, 'salmone', 'gatto', 'salmone norvegese appena pescato e molto costoso');
-$prodotto1 = new Products(10, "generico", 'generico');
+$prodotto1 = new Products(10, "generico", 'generico', 'descrizione generica');
 $gioco1 = new Gioco('plastica', 'rosso', 12, 'palla', 'cane', 'pr');
 var_dump($cibo1, $prodotto1, $gioco1);
 
